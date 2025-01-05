@@ -238,7 +238,7 @@ class PostResource extends Resource
             'create' => Pages\CreatePost::route('/create'),
             'comments' => Pages\ManagePostComments::route('/{record}/comments'),
             'edit' => Pages\EditPost::route('/{record}/edit'),
-            'view' => Pages\ViewPost::route('/{record}'),
+            'view' => Pages\ViewPost::route('/{record:id}'),
         ];
     }
 
